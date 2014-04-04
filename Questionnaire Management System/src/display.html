@@ -1,0 +1,65 @@
+<html>
+	<head>
+
+		<script language="JavaScript">
+
+			function click(e) 
+			{
+				if (document.all) 
+				{
+                    if (event.button==2||event.button==3) 
+					{
+						oncontextmenu='return false';
+                    }
+                }
+
+                if (document.layers) 
+				{
+                    if (e.which == 3) 
+					{
+                      oncontextmenu='return false';
+                    }
+                }
+            }
+
+            if (document.layers) 
+			{
+				document.captureEvents(Event.MOUSEDOWN);
+            }
+            
+			document.onmousedown=click;          
+                                
+            function handleKeyDown() 
+			{
+				if (window.event.keyCode == 116) 
+				{     
+					event.keyCode=0;
+                    event.returnValue=false;   
+                }
+            }
+            
+			document.onkeydown = handleKeyDown;             
+		</script>
+	</head>
+
+	<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+		<form name="dis">
+			<p><strong>Semester: </strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input readonly="true" type="text" value="" size="10" name="sem"></p>
+			<br>
+			<p><strong>Subject Name: </strong>&nbsp <input readonly="true" type="text" value="" size="10" name="s_name"></p>
+			<br>
+			<p><strong>Subject Code: </strong>&nbsp&nbsp <input readonly="true" type="text" value="" size="10" name="s_code"></p>
+			<br>
+			<p><strong>Date: </strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input readonly="true" type="text" value="" size="10" name="date"></p>
+			<br>
+			<br>
+			<fieldset>
+				<table>
+					<tr> 	
+						<td> &nbsp&nbsp&nbsp&nbsp&nbsp <strong>Max Marks: </strong>&nbsp <input readonly="true" type="text" value="" size="5" name="marks"> </td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>

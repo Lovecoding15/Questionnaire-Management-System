@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		
+		<title> Student Home </title>
+		
+	</head>
+
+	<body>
+		<form>
+			<div style="position: absolute; left: 490px; top: 250px">
+				&nbsp&nbsp&nbsp&nbsp<b>Select the Exam_type :</b>
+				<select name="ex_type">
+					<option value="P1">Periodical 1</option>
+					<option value="P2">Periodical 2</option>
+					<option value="P3">Periodical 3</option>
+					<option value="M">Model Exam</option>
+					<option value="UNIV">University Exam</option>
+				</select>
+				<p align=center">
+					<strong>click here to START the Examination </strong>&nbsp&nbsp<input type="submit" value="START" onclick="openWin();">
+				</p>
+			</div>
+		</form>
+		
+		<script language="javascript">
+			var features = 'resizable=1,scrollbars=1,menubar=0,toolbar=0,location=0,directories=0';
+			function openWin()
+			{
+				var ex_type = document.forms[0].ex_type.value;
+				NewWin=document.open('../online/ss.jsp?&ex_type='+ex_type, '', features);
+				NewWin.window.resizeTo(screen.width,screen.height);
+				NewWin.window.moveTo(0,0);
+				window.opener='self';
+				window.close();
+			}
+		</script>
+	</body>
+</html>

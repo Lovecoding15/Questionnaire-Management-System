@@ -1,0 +1,75 @@
+<html>
+	<head>
+		
+		<script language="JavaScript">
+			function click(e) 
+			{
+				if (document.all) 
+				{
+					if (event.button==2||event.button==3) 
+					{
+						oncontextmenu='return false';
+                    }
+                }
+
+                if (document.layers) 
+				{
+                    if (e.which == 3) 
+					{
+						oncontextmenu='return false';
+                    }
+                  }
+            }
+
+            if (document.layers) 
+			{
+                document.captureEvents(Event.MOUSEDOWN);
+            }
+            
+			document.onmousedown=click;          
+	                                
+	        function handleKeyDown() 
+			{
+	            if (window.event.keyCode == 116) 
+				{     
+	                event.keyCode=0;
+	                event.returnValue=false;   
+	            }
+	        }
+	        
+			document.onkeydown = handleKeyDown;             
+		</script>
+
+		<style type="text/css">
+		<!--
+			#Layer1 {
+				position:absolute;
+				left:75px;
+				top:16px;
+				width:196px;
+				height:163px;
+				z-index:1;
+			}
+			#Layer2 {
+				position:absolute;
+				left:280px;
+				top:16px;
+				width:534px;
+				height:155px;
+				z-index:2;
+			}
+		-->
+		</style>
+	</head>
+	
+	<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+		<div id="Layer1"><img src="../online/images/BITLogo.jpg" alt="logo" width="192" height="163" /></div>
+		<div id="Layer2">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="650" height="165" title="mov">
+				<param name="movie" value="../online/images/mov.swf">
+				<param name="quality" value="high">
+					<embed src="../online/images/mov.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="650" height="165"></embed>
+			</object>
+		</div>
+	</body>
+</html>

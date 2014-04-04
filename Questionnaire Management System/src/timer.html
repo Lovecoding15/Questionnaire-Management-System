@@ -1,0 +1,73 @@
+<html>
+	<head>
+
+		<script language="JavaScript">
+		
+			function click(e) 
+			{
+				if (document.all) 
+				{
+                    if (event.button==2||event.button==3) 
+					{
+						oncontextmenu='return false';
+                    }
+                }
+
+                if (document.layers) 
+				{
+                    if (e.which == 3) 
+					{
+						oncontextmenu='return false';
+                    }
+                }
+            }
+
+            if (document.layers) 
+			{
+				document.captureEvents(Event.MOUSEDOWN);
+            }
+            document.onmousedown=click;          
+                               
+            function handleKeyDown() 
+			{
+				if (window.event.keyCode == 116) 
+				{     
+					event.keyCode=0;
+                    event.returnValue=false;   
+                }
+            }
+            document.onkeydown = handleKeyDown;             
+		</script>
+	</head>
+	
+	<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+		<form name="max_time"><p align=center> <strong>Max. Time: </strong>&nbsp <input readonly="true" type="text" value="" size="5" name="time"> &nbsp(in Mins)</p></form>
+		<br><br><br><br>
+		<fieldset>
+			<legend><b>Timer.. </b></legend>
+			<form method="post" name="cd" >
+				<table>
+					<tr> 
+						<td align="center"> &nbsp<strong>Count Down Timer: </strong>&nbsp <input id="txt" readonly="true" type="text" value="" size="5" name="disp"> </td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+		<br><br><br>
+		<fieldset>
+			<form method="post" name="ques" >
+				<table>
+					<tr> 
+						<td> &nbsp&nbsp<b>Questions Answered: </b>&nbsp&nbsp <input readonly="true" type="text" value="" size="3" name="q_ans"> </td>
+					</tr>
+					<tr>
+						<td> &nbsp&nbsp<b>Questions Remaining: </b>&nbsp <input readonly="true" type="text" value="" size="3" name="q_rem"> </td>
+					</tr>
+					<tr>
+						<td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(to be answered) </td>
+					</tr>		
+				</table>
+			</form>
+		</fieldset>
+	</body>
+</html>
