@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="title_station">#444444</color> 
+   
+<!--黃-->
+<color name="station_head_1">#888800</color>    
+<color name="station_rhe1_1">#ffffbb</color>    
+<color name="station_content_1">#ffff99</color>
+<color name="station_rhe2_title_1">#bbbb00</color>    
+<color name="station_rhe2_1">#eeff00</color>    
+<!--紅-->
+<color name="station_head_2">#880000</color>    
+<color name="station_rhe1_2">#ffdddd</color>    
+<color name="station_content_2">#ffbbbb</color>    
+<color name="station_rhe2_title_2">#aa0000</color>    
+<color name="station_rhe2_2">#ff9999</color>    
+<!--綠-->
+<color name="station_head_3">#006000</color>    
+<color name="station_rhe1_3">#ccff99</color>    
+<color name="station_content_3">#99ff99</color>    
+<color name="station_rhe2_title_3">#008800</color>    
+<color name="station_rhe2_3">#66ff66</color>    
+<!--紫--><color name="station_head_4">#550088</color>    
+<color name="station_rhe1_4">#e8ccff</color>    
+<color name="station_content_4">#f0bbff</color>    
+<color name="station_rhe2_title_4">#7700bb</color>    
+<color name="station_rhe2_4">#e38eff</color>    
+<!--灰-->
+<color name="station_head_5">#222222</color>    
+<color name="station_rhe1_5">#dddddd</color>    
+<color name="station_content_5">#cccccc</color>    
+<color name="station_rhe2_title_5">#555555</color>    
+<color name="station_rhe2_5">#aaaaaa</color>    
+
+<!--藍 other panel-->
+<color name="list_tiitle">#003366</color> 
+<color name="list_content">#ddffff</color> 
+<color name="list_content2">#cceeff</color> 
+<color name="list_content3">#77ddFF</color> 
+<color name="btn_face">#007799</color> 
+
+<color name="btn_main_enable">#800060</color> 
+<color name="btn_main_disable">#806060</color> 
+
+<color name="gray_line">#aaaaaa</color> 
+<color name="black_line">#000000</color> 
+
+<color name="rect_AVG">#cccccc</color> 
+<color name="text_AVG">#FFFFFF</color> 
+
+<color name="test_line">#ff0000</color> 
+<color name="test_line_shadow">#CCCCCC</color> 
+
+
+
+</resources>

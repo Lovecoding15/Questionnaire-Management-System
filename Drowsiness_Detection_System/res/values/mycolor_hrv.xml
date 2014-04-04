@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="view_bk">#E0EEEE</color> 
+<color name="view_line">#0060a0</color> 
+<color name="view_label">#003377</color> 
+<color name="view_value">#ff0000</color> 
+
+<color name="info_title2">#660000</color> 
+<color name="info_content2">#FFF0F5</color> 
+<color name="info_cotent_font2">#990000</color> 
+
+<color name="info_title3">#333300</color> 
+<color name="info_content3">#ccff99</color> 
+<color name="info_cotent_font3">#333300</color> 
+
+<color name="info_title1">#000066</color> 
+<color name="info_content1">#99ffff</color> 
+<color name="info_cotent_font1">#000066</color> 
+
+<color name="info_title_font">#ffffff</color> 
+
+<color name="info_bk">#607B8B</color> 
+
+</resources>

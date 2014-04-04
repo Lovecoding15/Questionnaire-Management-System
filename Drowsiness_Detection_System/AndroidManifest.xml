@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hrm_bluetooth"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.example.hrm_bluetooth.Listview"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.hrm_bluetooth.MainActivity_ECG"
+            android:label="@string/app_name" >
+           
+        </activity>
+         <activity
+            android:name="com.example.hrm_bluetooth.MainActivity_BL"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+          <activity
+            android:name="com.example.hrm_bluetooth.MainActivity_HRM"
+            android:label="@string/app_name" >
+           
+        </activity>
+         <activity
+            android:name="com.example.hrm_bluetooth.MainActivity_HRV"
+            android:label="@string/app_name" >
+           
+        </activity>
+         <activity
+            android:name="com.example.hrm_bluetooth.Show_Database"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+         <activity
+            android:name="com.example.hrm_bluetooth.Show_values"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+          <activity
+            android:name="com.example.hrm_bluetooth.Demo1"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+           <activity
+            android:name="com.example.hrm_bluetooth.experiment1"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+             <activity
+            android:name="com.example.hrm_bluetooth.experiment2"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+             
+             <activity
+            android:name="com.example.hrm_bluetooth.Demo2"
+            android:label="@string/app_name" >
+           
+        </activity>
+         
+              <activity
+            android:name="com.example.hrm_bluetooth.sleep1"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+               <activity
+            android:name="com.example.hrm_bluetooth.sleep2"
+            android:label="@string/app_name" >
+           
+        </activity>
+         
+                
+    </application>
+
+</manifest>
